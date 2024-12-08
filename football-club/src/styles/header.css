@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Black+Ops+One&display=swap');
+
+
+#pageHeader {
+    display: flex;
+    justify-content: center;
+    background: repeating-linear-gradient(
+        90deg,               /* Horizontalni smjer pruga */
+        red,                 /* Početna boja pruge */
+        red 150px,            /* Širina crvene pruge */
+        white 150px,          /* Početak bijele pruge */
+        white 300px           /* Širina bijele pruge */
+    );
+
+}
+
+#headerContent {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 60px;
+    box-shadow: 0 0 4px 2px rgba(80, 80, 80, .3);
+}
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#clubEmblem {
+    height: 60px;
+    width: auto;
+}
+
+#clubName {
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+#navigationContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#navigationList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#navigationList {
+    list-style-type: none;  /* Ukloni oznake s popisa */
+    margin: 0;              /* Ukloni marginu */
+    padding: 0;             /* Ukloni padding */
+    display: flex;          /* Rasporedi stavke u red */
+    justify-content: space-around; /* Rasporedi stavke ravnomjerno */
+}
+
+#navigationList li {
+    margin: 0 15px;         /* Razmak između stavki */
+}
+
+#navigationList a {
+    color: black;
+    text-decoration: none;  /* Ukloni podcrtavanje */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;      /* Debeli font */
+    padding: 8px 12px;     /* Padding unutar linkova */
+    transition: background-color 0.3s; /* Efekt prijelaza na hover */
+}
+
+#navigationList a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lagani bijeli hover efekt */
+    border-radius: 3px;    /* Blago zaobljeni rubovi na hover */
+}

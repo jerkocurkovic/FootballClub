@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Black+Ops+One&display=swap');
+
+
+.home-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.membership-section {
+    position: relative;
+    margin: 20px 0;
+    background-image: url('/public/images/clanarina.png'); /* Putanja do slike u public mapi */
+    background-size: cover;  /* Pokriva cijeli div */
+    background-position: center; /* Poravnava sliku u sredini */
+    width: 100%;  /* Širina diva */
+    height: 200px; /* Visina diva, možeš prilagoditi po potrebi */
+    display: flex;  /* Ako želiš koristiti flexbox unutar diva */
+    align-items: center; /* Centriranje sadržaja vertikalno */
+    justify-content: center; /* Centriranje sadržaja horizontalno */
+    overflow: hidden;
+}
+
+.membership-section::before {
+    content: ""; /* Kreira pseudo-element */
+    position: absolute; /* Pozicionira ga apsolutno */
+    top: 0; /* Na vrhu */
+    left: 0; /* S lijeve strane */
+    right: 0; /* S desne strane */
+    bottom: 0; /* Na dnu */
+    background-color: rgba(0, 0, 0, 0.5); /* Zatamni pozadinu sa crnom bojom (prozirna) */
+    opacity: 0; /* Započinjemo s potpunom prozirnošću */
+    transition: opacity 0.3s ease; /* Glatka tranzicija za promjenu opaciteta */
+    text-decoration: none;
+}
+.linkMember{
+    text-decoration: none;
+}
+.membership-section:hover::before {
+    opacity: 1; /* Kada je hover, postavi opacitet na 1 (neprozirno) */
+}
+
+.signup-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4757; /* Crvena boja */
+    color: white;
+    border-radius: 5px;
+}
+
+
+.news-section {
+    margin-top: 40px;
+}
+
+.news-section h2 {
+    margin-bottom: 20px;
+}
+
+.news-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-section li {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Svijetlo sivi rub */
+    border-radius: 5px;
+}
+
+.news-section h3 {
+    margin: 0 0 5px 0;
+}
+
+.news-section p {
+    margin: 0;
+}
